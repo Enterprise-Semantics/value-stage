@@ -1,0 +1,113 @@
+id: ES:CMM:value-stage
+canonical_name: Value Stage ;;; Capability Maturity Model
+version: 1.0.0
+date: 2026-09-30
+author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+governance: enterprise-semantics
+applies_to_concept: ES:CONCEPT:value-stage
+provenance:
+  decision: [ES-ADR-049]
+  implementation: [CR-ES-049]
+structure: 5-level model with consistent criteria categories
+
+levels:
+
+  level_0_adhoc:
+    label: Level 0 ;;; Ad-hoc
+    description: |
+      No documented instantiation. Value Stage is implicitly present or used
+      informally without explicit recognition. Decisions are made ad-hoc.
+    criteria:
+      awareness: 0
+      definition: 0
+      implementation: 0
+      measurement: 0
+      optimization: 0
+    evidence_required:
+      - No documentation
+      - No explicit boundary assertions
+      - Implicit or accidental instantiation
+    conformance: not_conformant
+    gate_to_next_level:
+      - At least 1 explicit reference to value stage in any artefact
+
+  level_1_aware:
+    label: Level 1 ;;; Aware
+    description: |
+      Value Stage is explicitly recognized and named. Boundary assertions
+      exist informally. Stakeholders can describe what value stage
+      means in their context.
+    criteria:
+      awareness: 1
+      definition: 1
+      implementation: 0
+      measurement: 0
+      optimization: 0
+    evidence_required:
+      - Named reference in 1+ document
+      - At least 1 stakeholder interview confirming awareness
+      - Informal boundary assertions
+    conformance: awareness_only
+    gate_to_next_level:
+      - Documented definition in 1+ canonical artefact
+      - Boundary assertions formalized
+
+  level_2_defined:
+    label: Level 2 ;;; Defined
+    description: |
+      Value Stage has a canonical definition document. Boundary assertions
+      are formalized. Multiple instantiations share a common reference.
+    criteria:
+      awareness: 2
+      definition: 2
+      implementation: 1
+      measurement: 0
+      optimization: 0
+    evidence_required:
+      - Canonical definition in ES docs (concepts/<slug>.md)
+      - 5+ positive conformance tests passing (per ES-ADR-031 §4)
+      - Formal boundary assertions documented
+    conformance: baseline_conformant
+    gate_to_next_level:
+      - Implemented in 2+ value streams / contexts
+      - Measurement instrumentation planned
+
+  level_3_implemented:
+    label: Level 3 ;;; Implemented
+    description: |
+      Value Stage is implemented in production across multiple contexts.
+      Measurement infrastructure is operational. Variance is tracked.
+    criteria:
+      awareness: 3
+      definition: 2
+      implementation: 2
+      measurement: 1
+      optimization: 0
+    evidence_required:
+      - Implementation in 2+ contexts
+      - 10 negative conformance tests passing (no false positives)
+      - Measurement instrumentation in place
+      - Quarterly conformance reports
+    conformance: production_conformant
+    gate_to_next_level:
+      - Cross-context optimization evidence
+      - Adaptive improvements documented
+
+  level_4_adaptive:
+    label: Level 4 ;;; Adaptive
+    description: |
+      Value Stage instantiation is optimized continuously. Cross-context
+      patterns are learned and fed back. Innovation is data-driven.
+    criteria:
+      awareness: 3
+      definition: 3
+      implementation: 3
+      measurement: 2
+      optimization: 1
+    evidence_required:
+      - Continuous optimization evidence
+      - Cross-context learning loops
+      - Annual innovation outputs
+      - External recognition / publication
+    conformance: reference_conformant
+    gate_to_next_level: N/A ;;; top level

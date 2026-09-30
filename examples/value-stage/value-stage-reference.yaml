@@ -1,0 +1,26 @@
+id: ES:EXAMPLE:value-stage
+canonical_name: OTCHERE Inc and Value Stage Reference Example
+status: Established
+version: '1.0.0'
+date: '2026-09-30'
+author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
+applies_to_concept: value-stage
+example_type: reference
+source_organization: OTCHERE Inc
+conformance_level: L2 (Managed)
+boundary_assertion:
+  - The example demonstrates: foundational reference concept with cross-context materiality.
+  - Per ES-ADR-031 §4 (5-category taxonomy).
+provenance:
+  decision: [ES-ADR-050]
+  implementation: [CR-ES-050, CR-ES-050-d]
+scenario: |
+  Reference scenario showing how Value Stage is realized in an OTCHERE Inc enterprise context.
+  The scenario includes:
+    1. A canonical reference or specialization anchor.
+    2. Demonstrates the 5-category boundary from ES-ADR-031 §4.
+    3. Materializes the concept in a non-vacuous, non-instance-only form.
+evaluation:
+  - conforms_to: ES-ADR-031 §4
+  - conforms_to: ES-ADR-049 (self-containment)
+  - conforms_to: ES-ADR-050 (gap closure)

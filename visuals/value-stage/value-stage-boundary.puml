@@ -1,0 +1,16 @@
+@startuml
+!title Value Stage ; Boundary
+package "Canonical Concept" {
+  [Value Stage]
+}
+package "Relationships" {
+  [Value Stage] .. [Value Stage]
+}
+note right
+  Value Stage is a foundational reference concept.
+  Per ES-ADR-031 §4 (5-category taxonomy).
+  Per ES-ADR-049 + CR-ES-049 (self-containment).
+  Per ES-ADR-050 + CR-ES-050 Slice C (visual authoring).
+  Cardinal author rule: Emmanuel A. Otchere.
+end note
+@enduml

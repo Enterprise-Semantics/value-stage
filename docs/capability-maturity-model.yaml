@@ -1,5 +1,5 @@
 id: ES:CMM:value-stage
-canonical_name: Value Stage ;;; Capability Maturity Model
+canonical_name: Value Stage, Capability Maturity Model
 version: 1.0.0
 date: 2026-09-30
 author: Emmanuel A. Otchere (cardinal author rule, 2026-09-24)
@@ -13,7 +13,7 @@ structure: 5-level model with consistent criteria categories
 levels:
 
   level_0_adhoc:
-    label: Level 0 ;;; Ad-hoc
+    label: Level 0, Ad-hoc
     description: |
       No documented instantiation. Value Stage is implicitly present or used
       informally without explicit recognition. Decisions are made ad-hoc.
@@ -32,7 +32,7 @@ levels:
       - At least 1 explicit reference to value stage in any artefact
 
   level_1_aware:
-    label: Level 1 ;;; Aware
+    label: Level 1, Aware
     description: |
       Value Stage is explicitly recognized and named. Boundary assertions
       exist informally. Stakeholders can describe what value stage
@@ -53,7 +53,7 @@ levels:
       - Boundary assertions formalized
 
   level_2_defined:
-    label: Level 2 ;;; Defined
+    label: Level 2, Defined
     description: |
       Value Stage has a canonical definition document. Boundary assertions
       are formalized. Multiple instantiations share a common reference.
@@ -73,7 +73,7 @@ levels:
       - Measurement instrumentation planned
 
   level_3_implemented:
-    label: Level 3 ;;; Implemented
+    label: Level 3, Implemented
     description: |
       Value Stage is implemented in production across multiple contexts.
       Measurement infrastructure is operational. Variance is tracked.
@@ -94,7 +94,7 @@ levels:
       - Adaptive improvements documented
 
   level_4_adaptive:
-    label: Level 4 ;;; Adaptive
+    label: Level 4, Adaptive
     description: |
       Value Stage instantiation is optimized continuously. Cross-context
       patterns are learned and fed back. Innovation is data-driven.
@@ -110,4 +110,4 @@ levels:
       - Annual innovation outputs
       - External recognition / publication
     conformance: reference_conformant
-    gate_to_next_level: N/A ;;; top level
+    gate_to_next_level: N/A, top level
